@@ -1,0 +1,26 @@
+{
+  "name": "cortex-plugin-product-analytics",
+  "version": "1.0.0",
+  "description": "Product Analytics Query Agent — Mixpanel/Amplitude/PostHog/Heap natural language analytics queries",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-product-analytics",
+  "homepage": "https://cortexprism.io/marketplace/plugins/product-analytics",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "analytics_ask",
+      "description": "Ask product question in natural language",
+      "params": []
+    },
+    { "name": "analytics_funnel", "description": "Analyze conversion funnel", "params": [] },
+    { "name": "analytics_retention", "description": "Get retention cohort analysis", "params": [] },
+    { "name": "analytics_dashboard", "description": "Generate analytics dashboard", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
